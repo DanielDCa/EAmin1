@@ -1,0 +1,39 @@
+<!--
+<div class="container mt-5">
+
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <div class="card">
+
+        <div class="card-body text-center">
+          <span class="titulo">LISTADO DE COLECTIVOS</span>
+          <button class="btn btn-success float-end" routerLink="/crear-colectivo">NUEVO</button>
+
+          <table class="table table-striped mt-3">
+            <thead>
+              <tr>
+                <th scope="col">Colectivo</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Vacuna</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let colectivo of colectivos">
+                <th scope="row">{{colectivo.nombre}}</th>
+                <td>{{colectivo.descripcion}}</td>
+                <td>{{colectivo.vacuna}}</td>
+                <td>
+                  <i class="fas fa-edit text-primary" (click)="gotoUpdate(colectivo._id)"></i>
+                  <i class="fas fa-trash text-danger" (click)="deleteColectivo(colectivo._id)"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div> -->

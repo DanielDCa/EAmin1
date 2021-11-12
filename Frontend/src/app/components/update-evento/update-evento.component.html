@@ -1,0 +1,63 @@
+<div class="container mt-5">
+
+  <div class="row">
+
+    <div class="col-lg-6 offset-lg-3">
+
+      <div class="card">
+
+        <div class="card-body">
+          <span class="titulo text-center">EDITAR EVENTO</span>
+          <form class="mt-3"   (ngSubmit)="editEvento()" [formGroup]="eventoForm">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Evento</label>
+              <input type="text" class="form-control" id="" formControlName="nombre">
+
+              <!-- <div class="text-danger" *ngIf="colectivoForm.controls['nombre'].errors?.required
+              && colectivoForm.controls['nombre'].touched">
+                <span>El nombre del colectivo es obligatorio</span>
+              </div> *ngIf="eventoForm"-->
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Localizacion</label>
+              <input type="text" class="form-control" id="" formControlName="localizacion">
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Fecha</label>
+              <input type="date" class="form-control" id="" formControlName="fecha">
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Latitud</label>
+              <input type="text" class="form-control" id="" formControlName="latitud">
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Longitud</label>
+              <input type="text" class="form-control" id="" formControlName="longitud">
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Descripcion</label>
+              <input type="text" class="form-control" id="" formControlName="descripcion">
+
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-secondary btn-lg float-start" routerLink="">Volver</button>
+              <button class="btn btn-success btn-lg float-end" type="submit" [disabled]="eventoForm.invalid">Aceptar</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+

@@ -1,0 +1,44 @@
+
+<div class="container mt-5">
+
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <div class="card">
+
+        <div class="card-body text-center">
+          <span class="titulo">LISTADO DE EVENTOS</span>
+          <button class="btn btn-success float-end" routerLink="/crear-colectivo">NUEVO</button>
+
+          <table class="table table-striped mt-3">
+            <thead>
+              <tr>
+                <th scope="col">Evento</th>
+                <th scope="col">Localizacion</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Lat:Long</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Editar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let evento of eventos">
+                <th scope="row">{{evento.nombre}}</th>
+                <td>{{evento.localizacion}}</td>
+                <td>{{evento.fecha}}</td>
+                <td>{{evento.latitud}} : {{evento.longitud}} </td>
+                <td>{{evento.descripcion}}</td>
+                <td>
+                  <i class="fas fa-edit text-primary" (click)="gotoUpdate(evento._id)"></i>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+

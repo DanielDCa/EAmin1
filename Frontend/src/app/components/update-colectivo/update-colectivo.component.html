@@ -1,0 +1,47 @@
+<!-- <div class="container mt-5">
+
+  <div class="row">
+
+    <div class="col-lg-6 offset-lg-3">
+
+      <div class="card">
+
+        <div class="card-body">
+          <span class="titulo text-center">EDITAR COLECTIVO</span>
+          <form class="mt-3"  *ngIf="colectivoForm" (ngSubmit)="editColectivo()" [formGroup]="colectivoForm">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Colectivo</label>
+              <input type="text" class="form-control" id="" formControlName="nombre">
+
+              <div class="text-danger" *ngIf="colectivoForm.controls['nombre'].errors?.required
+              && colectivoForm.controls['nombre'].touched">
+                <span>El nombre del colectivo es obligatorio</span>
+              </div>
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Descripcion</label>
+              <input type="text" class="form-control" id="" formControlName="descripcion">
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Vacuna</label>
+              <input type="text" class="form-control" id="" formControlName="vacuna">
+
+            </div>
+            <div class="mb-3">
+              <button class="btn btn-secondary btn-lg float-start" routerLink="">Volver</button>
+              <button class="btn btn-success btn-lg float-end" type="submit" [disabled]="colectivoForm.invalid">Aceptar</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+ -->
